@@ -1,0 +1,41 @@
+﻿<Window x:Class="Usingdock.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Usingdock"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <DockPanel LastChildFill="True" >
+        
+        <Menu DockPanel.Dock="top">
+            <MenuItem Header="HOME">
+                <MenuItem Header="New" x:Name="Newing" Click="Newing_Click" />
+                <MenuItem Header="Open" x:Name="Open" Click="Open_Click" />
+                <MenuItem Header="Save" x:Name="saving" Click="saving_Click" /> 
+                
+
+            </MenuItem>
+            <MenuItem Header="SERVICE">
+                <MenuItem Header="MAINTANCE" />
+                <MenuItem Header="DEVELOPMENT" />
+                <MenuItem Header="CUSTOMER SUPPORT" />
+            </MenuItem>
+            <MenuItem Header="CONTACT">
+                <MenuItem Header="PHONE" />
+                <MenuItem Header="EMAIL" />
+                <MenuItem Header="ADDRESS" />
+            </MenuItem>
+            <MenuItem Header="FAQ">
+                <MenuItem Header="About" />
+                <MenuItem Header="Contact" />
+                <MenuItem Header="Help" /> 
+            </MenuItem>
+        </Menu>
+        <Button x:Name="Back" Click="Back_Click" Content="BACK"   ></Button>
+        <Button x:Name="FORWARD" Click="FORWARD_Click" Content="FORWARD"   ></Button>
+
+
+        <Frame  NavigationUIVisibility="Hidden" x:Name="Mainwindow" ></Frame>  
+    </DockPanel>
+</Window>
